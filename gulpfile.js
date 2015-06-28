@@ -194,7 +194,7 @@ gulp.task('ts', function () {
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 // Watch Files For Changes & Reload
-gulp.task('serve', ['styles', 'elements', 'images'], function () {
+gulp.task('serve', ['ts', 'styles', 'elements', 'images'], function () {
   browserSync({
     notify: false,
     snippetOptions: {

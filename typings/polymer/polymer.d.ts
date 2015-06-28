@@ -4,6 +4,7 @@
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
 interface PolymerElement {
+	is: string;
 
 	// definition
 	publish?: Object;
