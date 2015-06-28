@@ -9,6 +9,31 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.0"
+    "browser-sync": "^2.7.12",
+    "del": "^1.2.0",
+    "glob": "^5.0.12",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-cache": "^0.2.10",
+    "gulp-changed": "^1.2.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-flatten": "0.0.4",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jshint": "^1.11.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-minify-html": "^1.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.3",
+    "gulp-size": "^1.2.2",
+    "gulp-typescript": "^2.7.7",
+    "gulp-uglify": "^1.2.0",
+    "gulp-uncss": "^1.0.1",
+    "gulp-useref": "^1.2.0",
+    "gulp-vulcanize": "^6.0.1",
+    "jshint-stylish": "^2.0.1",
+    "merge-stream": "^0.1.7",
+    "run-sequence": "^1.1.1",
+    "vulcanize": "^1.9.3"
   }
 }
