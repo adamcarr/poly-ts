@@ -1,0 +1,24 @@
+<link rel="import" href="/bower_components/iron-ajax/iron-ajax.html">
+
+<dom-module id="reddit-subreddit-listing">
+    <template>
+        <iron-ajax
+            id="ajax"
+            params=''
+            url="http://www.reddit.com/r/todayilearned.json"
+            handle-as="json"
+            debounce-duration="300"
+            last-response="{{data}}"
+            ></iron-ajax>
+        <hr>
+        <input value="{{subreddit::input}}"/> <button on-click="getData">Fetch</button>
+        <hr>
+        <ul>
+            <template is="dom-repeat" items="[[data.data.children]]" filter="isNotSticky">
+                <li><img src="[[item.data.thumbnail]]" />[[item.data.title]]</li>
+            </template>
+        </ul>
+    </template>
+<dom-module>
+
+<script src="reddit-subreddit-listing.js"></script>

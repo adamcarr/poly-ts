@@ -183,7 +183,8 @@ gulp.task('precache', function (callback) {
 gulp.task('ts', function () {
     var tsResult = gulp.src('app/**/*.ts')
         .pipe(ts({
-            noImplicitAny: true
+            noImplicitAny: true,
+            module: 'commonjs'
         }));
 
     return tsResult.js.pipe(gulp.dest('app'))

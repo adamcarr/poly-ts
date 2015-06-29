@@ -16,6 +16,9 @@
     ],
     "files": [
         "./app/elements/proto-element/proto-element.ts",
+        "./app/elements/reddit-subreddit-listing/reddit-subreddit-listing.ts",
+        "./app/scripts/IRedditContent.ts",
+        "./app/scripts/IRedditListing.ts",
         "./typings/polymer/polymer.d.ts",
         "./typings/tsd.d.ts"
     ]
